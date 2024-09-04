@@ -1,11 +1,10 @@
-
 import React, { useState } from "react";
 import { MdDashboard, MdHome, MdSettings, MdStore } from "react-icons/md";
-import { CgMenuRight, CgCloseR  } from "react-icons/cg";
+import { CgMenuRight, CgCloseR } from "react-icons/cg";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Hamburger() {
-const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -48,19 +47,19 @@ const [isOpen, setIsOpen] = useState(false);
                 <a href="">Home</a>
               </li>
               <li>
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <a href="">Home</a>
+                <a href="">About</a>
+              </li>
+              <li>
+                <a href="">Services</a>
+              </li>
+              <li>
+                <a href="">Faqs</a>
+              </li>
+              <li>
+                <a href="">Testimonials</a>
+              </li>
+              <li>
+                <a href="">Contact Us</a>
               </li>
             </ul>
           </div>
