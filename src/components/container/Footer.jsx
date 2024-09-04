@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col items-center w-full h-full">
+    <div className="flex flex-col items-center w-full h-full bg-black/90  py-4 px-8 text-white divide-y-2">
       <div className="grid lg:grid-cols-4 md:grid-cols-2 w-full">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 col-span-2">
           <img src="" alt="" />
           <div className="flex flex-col gap-2 col-span-2">
             <span>Easy Ride</span>
@@ -52,7 +52,7 @@ export default function Footer() {
           <a href="">Privacy Policy</a>
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row items-center justify-between">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between p-2">
         <span>&copy; 2024 Easing Life™. All Rights Reserved.</span>
         <span>Social Icons</span>
       </div>
