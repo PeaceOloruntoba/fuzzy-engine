@@ -1,31 +1,11 @@
 import React, { useState } from "react";
-import { MdDashboard, MdHome, MdSettings, MdStore } from "react-icons/md";
 import { CgMenuRight, CgCloseR } from "react-icons/cg";
-import { Link, useNavigate } from "react-router-dom";
 
 export default function Hamburger() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const Menus = [
-    { title: "Home", icon: <MdHome className="text-[20px]" />, href: "/" },
-    {
-      title: "Dashboard",
-      icon: <MdDashboard className="text-[20px]" />,
-      href: "/dashboard",
-    },
-    {
-      title: "Store",
-      icon: <MdStore className="text-[20px]" />,
-      href: "/store",
-    },
-    {
-      title: "Settings",
-      icon: <MdSettings className="text-[20px]" />,
-      href: "/settings",
-    },
-  ];
   return (
     <div className="">
       <button
