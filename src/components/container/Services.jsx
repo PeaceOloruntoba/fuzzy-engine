@@ -1,4 +1,8 @@
 import React from "react";
+import images from "../../assets";
+
+const hireDriver = images?.hireDriver;
+const bookTaxi = images?.bookTaxi;
 
 export default function Services() {
   return (
@@ -6,9 +10,10 @@ export default function Services() {
       <span>Services</span>
       <div className="grid grid-cols-2 items-center justify-center">
         <div className="flex p-4 border border-yellow-600">
-          <img src="" alt="" />
+          <img src={hireDriver} alt="" />
         </div>
-        <div className="flex">
+        <div className="flex flex-col gap-2">
+          <span className="text-xl font-semibold">Hire a Driver</span>
           <span>
             Easing life group of companies thought of a way to ease life and
             then created the Easing Life Taxi; thereby providing job opportunity
@@ -20,9 +25,10 @@ export default function Services() {
       </div>
       <div className="grid grid-cols-2 items-center justify-center">
         <div className="flex p-4 border border-yellow-600">
-          <img src="" alt="" />
+          <img src={bookTaxi} alt="" />
         </div>
-        <div className="flex">
+        <div className="flex flex-col gap-2">
+          <span className="text-xl font-semibold">Book a Taxi</span>
           <span>
             The second and the main goal of creating this branch of the company
             is to give our customers easy transport system. With easing life
