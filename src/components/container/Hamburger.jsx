@@ -26,34 +26,34 @@ export default function Hamburger() {
           <div className="flex flex-col gap-8 items-start h-screen p-4 pt-[4em]">
             <ul className="flex flex-col gap-4">
               <li>
-                <Link to="/" onClick={() => setIsOpen(false)}>
+                <a href="#hero" onClick={() => setIsOpen(false)}>
                   Home
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/about" onClick={() => setIsOpen(false)}>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" onClick={() => setIsOpen(false)}>
+                <a href="#services" onClick={() => setIsOpen(false)}>
                   Services
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/faqs" onClick={() => setIsOpen(false)}>
-                  Faq
-                </Link>
+                <a href="#whys" onClick={() => setIsOpen(false)}>
+                  Why Easy Ride?
+                </a>
               </li>
               <li>
-                <Link to="/testimonials" onClick={() => setIsOpen(false)}>
+                <a href="#faqs" onClick={() => setIsOpen(false)}>
+                  Faqs
+                </a>
+              </li>
+              <li>
+                <a href="#testimonial" onClick={() => setIsOpen(false)}>
                   Testimonials
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/contact" onClick={() => setIsOpen(false)}>
+                <a href="#contact" onClick={() => setIsOpen(false)}>
                   Contact Us
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
