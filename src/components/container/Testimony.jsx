@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 export default function Testimony({ quote, author, company, avatar }) {
   return (
@@ -9,13 +8,7 @@ export default function Testimony({ quote, author, company, avatar }) {
           &quot;{quote}&quot;
         </p>
         <div className="flex items-center justify-center mt-6">
-          <Image
-            src={avatar}
-            alt={author}
-            width={70}
-            height={70}
-            className="rounded-full"
-          />
+          <img src={avatar} alt={author} className="rounded-full" />
         </div>
         <p className="mt-4 font-bold text-lg text-gray-900">{author}</p>
         <p className="text-gray-700">{company}</p>
