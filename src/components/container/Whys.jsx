@@ -1,5 +1,8 @@
 import React from "react";
-import { apple, ddd, play } from "../assets"; // Ensure correct paths to your assets
+import images from "../../assets";
+
+const play = images?.playStore;
+const apple = images?.appleStore;
 
 export default function Whys() {
   return (
