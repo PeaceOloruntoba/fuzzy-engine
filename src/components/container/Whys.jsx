@@ -3,6 +3,7 @@ import images from "../../assets";
 
 const play = images?.playStore;
 const apple = images?.appleStore;
+const ddd = images?.herobg;
 
 export default function Whys() {
   return (
