@@ -1,12 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Hamburger from "./Hamburger";
+import images from "../../assets";
+
+const logo = images?.logo;
 
 export default function Navbar() {
   return (
     <div className="w-full text-black/90 text-xl flex items-center justify-between font-semibold py-2 px-6 bg-white shadow-md">
       <div className="flex items-center justify-center">
-        <img src="/path/to/logo.png" alt="Logo" className="h-10" />
+        <img src={logo} alt="Logo" className="h-10" />
       </div>
       <div className="md:flex items-center justify-center hidden gap-2">
         <a
