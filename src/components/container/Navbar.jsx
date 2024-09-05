@@ -1,53 +1,50 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Hamburger from "./Hamburger";
-import images from "../../assets";
-
-const logo = images?.logo;
 
 export default function Navbar() {
   return (
-    <div className="w-full text-black/90 text-xl flex items-center justify-between font-semibold px-6 bg-white shadow-md">
+    <div className="w-full text-black/90 text-xl flex items-center justify-between font-semibold py-2 px-6 bg-white shadow-md">
       <div className="flex items-center justify-center">
-        <img src={logo} alt="Logo" className="h-20" />{" "}
+        <img src="/path/to/logo.png" alt="Logo" className="h-10" />
       </div>
       <div className="md:flex items-center justify-center hidden gap-2">
-        <Link
-          to="/"
+        <a
+          href="#hero"
           className="hover:bg-gray-300 px-3 rounded-md transition-all duration-500 py-1"
         >
           Home
-        </Link>
-        <Link
-          to="/about"
-          className="hover:bg-gray-300 px-3 rounded-md transition-all duration-500 py-1"
-        >
-          About
-        </Link>
-        <Link
-          to="/services"
+        </a>
+        <a
+          href="#services"
           className="hover:bg-gray-300 px-3 rounded-md transition-all duration-500 py-1"
         >
           Services
-        </Link>
-        <Link
-          to="/faqs"
+        </a>
+        <a
+          href="#whys"
           className="hover:bg-gray-300 px-3 rounded-md transition-all duration-500 py-1"
         >
-          Faq
-        </Link>
-        <Link
-          to="/testimonials"
+          Why Easy Ride?
+        </a>
+        <a
+          href="#faqs"
+          className="hover:bg-gray-300 px-3 rounded-md transition-all duration-500 py-1"
+        >
+          Faqs
+        </a>
+        <a
+          href="#testimonial"
           className="hover:bg-gray-300 px-3 rounded-md transition-all duration-500 py-1"
         >
           Testimonials
-        </Link>
-        <Link
-          to="/contact"
+        </a>
+        <a
+          href="#contact"
           className="hover:bg-gray-300 px-3 rounded-md transition-all duration-500 py-1"
         >
           Contact Us
-        </Link>
+        </a>
       </div>
       <div className="md:hidden">
         <Hamburger />
