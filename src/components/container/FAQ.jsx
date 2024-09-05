@@ -12,11 +12,15 @@ const FaqItem = ({ question, answer, isOpen, onClick }) => (
         {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
       </div>
     </div>
-    {isOpen && (
+    <div
+      className={`overflow-hidden transition-all duration-300 ease-in-out ${
+        isOpen ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"
+      }`}
+    >
       <div className="p-4 text-gray-700 text-sm bg-gray-50">
         <p>{answer}</p>
       </div>
-    )}
+    </div>
   </div>
 );
 
