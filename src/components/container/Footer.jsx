@@ -1,13 +1,16 @@
 import React from "react";
+import images from "../../assets"
+
+const logo = images?.logo
 
 export default function Footer() {
   return (
     <div className="flex flex-col items-center w-full h-full bg-black/90  py-4 px-8 text-white divide-y-2">
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 w-full">
-        <div className="flex items-center gap-2 col-span-2">
-          <img src="" alt="" />
+      <div className=" w-full">
+        <div className="flex flex-col md:flex-row items-center gap-2 col-span-2">
+          <img src={logo} alt="" className="w-44 rounded" />
           <div className="flex flex-col gap-2 col-span-2">
-            <span>Easy Ride</span>
+            <span className="font-bold">Easy Ride</span>
             <span>Making movements easy</span>
             <div className="flex flex-col text-nowrap mt-1">
               <a
@@ -16,7 +19,9 @@ export default function Footer() {
                 className="flex gap-2 items-center"
               >
                 <span>icon</span>
-                <span>PMB 249, Post Office Building, Dunkwa, Ghana.</span>
+                <span className="text-xs">
+                  PMB 249, Post Office Building, Dunkwa, Ghana.
+                </span>
               </a>
               <a
                 target="_blank"
@@ -37,22 +42,26 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-start gap-2">
-          <span>Navigation</span>
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Services</a>
-          <a href="">Why Easy Ride?</a>
-          <a href="">Testimonials</a>
+        <div className="flex flex-col items-start justify-start">
+          <span className="font-semibold">Navigation</span>
+          <div className="flex flex-col gap-1 text-sm">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Why Easy Ride?</a>
+            <a href="">Testimonials</a>
+          </div>
         </div>
-        <div className="flex flex-col items-center justify-start gap-2">
-          <span>Help and Legal</span>
-          <a href="">FAQs</a>
-          <a href="">Contact</a>
-          <a href="">Privacy Policy</a>
+        <div className="flex flex-col items-start justify-start gap-2">
+          <span className="font-semibold">Help and Legal</span>
+          <div className="flex flex-col gap-1 text-sm">
+            <a href="">FAQs</a>
+            <a href="">Contact</a>
+            <a href="">Privacy Policy</a>
+          </div>
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row items-center justify-between p-2">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between p-2 text-xs md:text-sm">
         <span>&copy; 2024 Easing Life™. All Rights Reserved.</span>
         <span>Social Icons</span>
       </div>

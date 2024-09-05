@@ -1,3 +1,4 @@
 import herobg from "./images/herobg.jpg"
+import logo from "./images/logo.jpg"
 
-export {herobg}
+export default {herobg, logo}
