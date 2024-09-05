@@ -33,7 +33,7 @@ const testimonialsData = [
 export default function Testimonial() {
   return (
     <div className="p-10 bg-white" id="testimonial">
-      <p className="text-3xl font-bold text-center mb-10">Testimonials</p>
+      <p className="text-3xl font-bold text-center mb-4">Testimonials</p>
       <TestimonialSlider testimonials={testimonialsData} />
     </div>
   );
