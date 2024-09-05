@@ -15,7 +15,6 @@ export default function Home() {
       <FaqsAll />
       <Testimonial />
       <Contact />
-      <p>Home Page</p>
     </div>
   );
 }
