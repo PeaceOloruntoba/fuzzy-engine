@@ -9,7 +9,7 @@ export default function Services() {
     <div className="flex flex-col w-full bg-black/80 text-white px-6 md:px-12 lg:px-24 items-center justify-center py-8">
       {/* Title Section */}
       <div className="flex py-6">
-        <span className="text-3xl md:text-4xl lg:text-5xl font-semibold text-yellow-400">
+        <span className="text-2xl md:text-3xl lg:text-4xl font-semibold text-yellow-400">
           Our Services
         </span>
       </div>
@@ -24,7 +24,7 @@ export default function Services() {
           />
         </div>
         <div className="flex flex-col gap-2 p-4 text-center md:text-left">
-          <span className="text-2xl md:text-3xl font-semibold">
+          <span className="text-xl md:text-2xl font-semibold">
             Hire a Driver
           </span>
           <p className="text-base md:text-lg">
@@ -45,7 +45,7 @@ export default function Services() {
       {/* Book a Taxi Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-4 md:gap-8 py-6">
         <div className="flex flex-col gap-2 p-4 text-center md:text-left order-2 md:order-1">
-          <span className="text-2xl md:text-3xl font-semibold">
+          <span className="text-xl md:text-2xl font-semibold">
             Book a Taxi
           </span>
           <p className="text-base md:text-lg">
