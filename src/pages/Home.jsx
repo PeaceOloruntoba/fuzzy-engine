@@ -9,12 +9,24 @@ import Contact from "../components/container/Contact";
 export default function Home() {
   return (
     <div className="w-full flex flex-col">
-      <Hero />
-      <Services />
-      <Whys />
-      <FaqsAll />
-      <Testimonial />
-      <Contact />
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="services">
+        <Services />
+      </section>
+      <section id="whys">
+        <Whys />
+      </section>
+      <section id="faqs">
+        <FaqsAll />
+      </section>
+      <section id="testimonial">
+        <Testimonial />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   );
 }
