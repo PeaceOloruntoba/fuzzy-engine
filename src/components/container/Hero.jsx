@@ -12,10 +12,9 @@ export default function Hero() {
             Easy Ride by Easing Life
           </h1>
           <p className="mb-8 text-base font-normal text-yellow-500 sm:text-lg md:text-xl lg:text-2xl max-w-full mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-            voluptatibus totam repellat illo doloribus blanditiis, vel rerum eum
-            dolorem tempore aperiam quo rem ipsa sunt! Doloremque adipisci
-            officiis labore culpa.
+            Whether it's a quick trip or a leisurely adventure, we prioritize
+            your comfort and convenience. Let us take you places, stress-free
+            and on time!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center pt-4">
             <Button
@@ -44,10 +43,13 @@ export default function Hero() {
           <div className="w-full sm:w-1/4 h-[1px] rounded-md bg-yellow-500"></div>
           <div className="px-4 sm:px-8 py-2 bg-yellow-500 w-full sm:w-3/4 items-center justify-center text-center rounded-lg font-bold text-base sm:text-xl text-white">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo,
-              nobis numquam esse non ab laboriosam soluta magni neque minus
-              cumque doloribus similique tenetur veniam est accusamus! Maiores
-              culpa error modi!
+              Your Journey, Simplified; Discover a new way to travel with{" "}
+              <span className="font-bold text-red-950 text-2xl animate-pulse">
+                Easy Ride!
+              </span>{" "}
+              Experience the convenience of seamless rides, where comfort meets
+              reliability. Whether you're heading to work or exploring Dunkwa,
+              we've got you covered. Ride Easy, arrive happy!
             </p>
           </div>
           <div className="w-full sm:w-1/4 h-[1px] rounded-md bg-yellow-500"></div>
